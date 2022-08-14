@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+@font-face{
+  font-family: titulo;
+  src: url('./assets/titulo.ttf');
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+:root{
+  --cor1: #557C83;
+  --cor2: #3AADA8;
+  --cor3: #A2D5AC;
+  --cor4: #E5EEC1;
+  --font_titulo: 'titulo', sans-serif;
+  --font_paragrafo: 'Alata', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--cor3);
+  background-image: url(./assets/background.svg);
+}
+
+nav{
+  background-color: var(--cor1);
+  box-shadow: 0px 7px 10px #0000002B;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3vh;
+}
+
+a{
+  font-family: var(--font_paragrafo);
+  margin: 0px 30px;
+  text-decoration: none;
+  color: var(--cor4);
+}
+
+p{
+  font-family: var(--font_paragrafo);
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  list-style: none;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#historia{
+  margin: 20px 30px 50px 30px;
+  text-align: justify;
+}
+
+#historia h2{
+  color: var(--cor1);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+#init{
+  height: 17vh;
+}
+
+h1, h2{
+  font-family: var(--font_titulo);
+}
+
+h1{
+  letter-spacing: 3px;
+  font-size: 5em;
+}
+
+h2{
+  font-size: 1.5em;
+  color: var(--cor4);
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+#curiosidades{
+  margin: 20px;
+  text-align: justify;
+  padding: 20px;
+  border-radius: 10px 0px 10px 0px;
+  background-color: var(--cor2);
+  box-shadow: 7px 7px 2px var(--cor1);
+}
+
+#curiosidades p{
+  color: var(--cor3);
+  margin: 20px 0px;
+}
+
+#area_game{
+  margin: 100px 0px;
+}
+
+footer{
+  background-color: var(--cor2);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+address{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+address div{
+  margin: 20px;
+}
+
+address div > img{
+  margin-right: 20px;
+}
+
+.logo{
+  width: 50px;
+}
+
+@media (max-width: 360px){
+  
+  nav{
+    height: 8vh;
+    position: fixed;
+    width: 100vw;
+  }
+  
+  #init{
+    height: 60vh;
+  }
+  
+  h1{
+    font-size: 4em;
+  }
+  
+  a{
+    margin: 0px 10px;
+  }
+}

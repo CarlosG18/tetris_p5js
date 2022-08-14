@@ -1,12 +1,29 @@
-let colorlist = ['gold', 'yellow', 'turquoise', 'red']
+var larg = 300;
+var alt = 600;
+var tela = 0;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background(255);
+  var cc = createCanvas(larg,alt);
+  cc.parent('box_game');
+  background(0);
 }
 
 function draw() {
-  noStroke()
-  fill(random(colorlist));
-  ellipse(mouseX, mouseY, 25, 25);
+  if(tela == 0){
+    
+  }else if(tela == 1){ // tela de jogo
+    
+  }else if(tela == 2){
+    
+  }
+}
+
+function mouseClicked(){
+  if(tela == 0){
+    
+  }else if(tela == 1){
+    
+  }else if(tela == 2){
+    
+  }
 }
